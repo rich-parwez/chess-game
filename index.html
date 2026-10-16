@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="chess-logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Castle Chess</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Castle Chess</h1>
+
+        <div class="tray" id="captured-W" aria-label="White pieces captured by Black"></div>
+
+        <div class="table">
+            <div class="side-panel" id="panel-B" aria-live="polite">
+                <img src="Bking.png" alt="">
+                <span class="side-label">Black</span>
+                <span class="side-note"></span>
+            </div>
+
+        <div class="board">
+            <div class="div" id="row8">
+                <div class="box" id="b801">Brook</div>
+                <div class="box" id="b802">Bknight</div>
+                <div class="box" id="b803">Bbishop</div>
+                <div class="box" id="b804">Bqueen</div>
+                <div class="box" id="b805">Bking</div>
+                <div class="box" id="b806">Bbishop</div>
+                <div class="box" id="b807">Bknight</div>
+                <div class="box" id="b808">Brook</div>
+            </div>
+            
+            <div class="div" id="row7">
+                <div class="box" id="b701">Bpawn</div>
+                <div class="box" id="b702">Bpawn</div>
+                <div class="box" id="b703">Bpawn</div>
+                <div class="box" id="b704">Bpawn</div>
+                <div class="box" id="b705">Bpawn</div>
+                <div class="box" id="b706">Bpawn</div>
+                <div class="box" id="b707">Bpawn</div>
+                <div class="box" id="b708">Bpawn</div>
+            </div>
+
+            <div class="div" id="row6">
+                <div class="box" id="b601"></div>
+                <div class="box" id="b602"></div>
+                <div class="box" id="b603"></div>
+                <div class="box" id="b604"></div>
+                <div class="box" id="b605"></div>
+                <div class="box" id="b606"></div>
+                <div class="box" id="b607"></div>
+                <div class="box" id="b608"></div>
+            </div>
+
+            <div class="div" id="row5">
+                <div class="box" id="b501"></div>
+                <div class="box" id="b502"></div>
+                <div class="box" id="b503"></div>
+                <div class="box" id="b504"></div>
+                <div class="box" id="b505"></div>
+                <div class="box" id="b506"></div>
+                <div class="box" id="b507"></div>
+                <div class="box" id="b508"></div>
+            </div>
+
+            <div class="div" id="row4">
+                <div class="box" id="b401"></div>
+                <div class="box" id="b402"></div>
+                <div class="box" id="b403"></div>
+                <div class="box" id="b404"></div>
+                <div class="box" id="b405"></div>
+                <div class="box" id="b406"></div>
+                <div class="box" id="b407"></div>
+                <div class="box" id="b408"></div>
+            </div>
+
+            <div class="div" id="row3">
+                <div class="box" id="b301"></div>
+                <div class="box" id="b302"></div>
+                <div class="box" id="b303"></div>
+                <div class="box" id="b304"></div>
+                <div class="box" id="b305"></div>
+                <div class="box" id="b306"></div>
+                <div class="box" id="b307"></div>
+                <div class="box" id="b308"></div>
+            </div>
+
+            <div class="div" id="row2">
+                <div class="box" id="b201">Wpawn</div>
+                <div class="box" id="b202">Wpawn</div>
+                <div class="box" id="b203">Wpawn</div>
+                <div class="box" id="b204">Wpawn</div>
+                <div class="box" id="b205">Wpawn</div>
+                <div class="box" id="b206">Wpawn</div>
+                <div class="box" id="b207">Wpawn</div>
+                <div class="box" id="b208">Wpawn</div>
+            </div>
+
+            <div class="div" id="row1">
+                <div class="box" id="b101">Wrook</div>
+                <div class="box" id="b102">Wknight</div>
+                <div class="box" id="b103">Wbishop</div>
+                <div class="box" id="b104">Wqueen</div>
+                <div class="box" id="b105">Wking</div>
+                <div class="box" id="b106">Wbishop</div>
+                <div class="box" id="b107">Wknight</div>
+                <div class="box" id="b108">Wrook</div>
+            </div>
+        </div>
+
+            <div class="side-panel" id="panel-W" aria-live="polite">
+                <img src="Wking.png" alt="">
+                <span class="side-label">White</span>
+                <span class="side-note"></span>
+            </div>
+        </div>
+
+        <div class="tray" id="captured-B" aria-label="Black pieces captured by White"></div>
+
+        <button id="reset-btn">New Game</button>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
